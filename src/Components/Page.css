@@ -1,0 +1,133 @@
+/* Container */
+.pg-container {
+  min-height: 100vh; /* full height */
+  background-color: #111;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 20px 40px;
+  overflow-y: auto; /* enable scrolling if content overflows */
+  box-sizing: border-box;
+}
+
+/* Banner/backdrop */
+.pg-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.pg-banner-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, #111 60%, transparent 100%);
+  padding: 20px 30px;
+}
+
+.pg-banner-overlay .pg-title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.pg-banner-overlay .pg-release {
+  margin: 5px 0 0 0;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/* Main content layout */
+.pg-main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Poster */
+.pg-poster {
+  flex-shrink: 0;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.pg-poster:hover {
+  transform: scale(1.05);
+}
+
+/* Movie info section */
+.pg-info {
+  flex: 1;
+  max-width: 700px;
+}
+
+.pg-info .pg-section-title {
+  margin-top: 0;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.pg-info .pg-overview {
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* Details block */
+.pg-details p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.pg-details strong {
+  color: #fff;
+}
+
+/* Scrollbar styling (optional) */
+.pg-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pg-container::-webkit-scrollbar-track {
+  background: #111;
+}
+
+.pg-container::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pg-main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pg-poster {
+    width: 80%;
+  }
+
+  .pg-info {
+    max-width: 90%;
+  }
+
+  .pg-banner {
+    height: 250px;
+  }
+
+  .pg-banner-overlay .pg-title {
+    font-size: 1.8rem;
+  }
+}
