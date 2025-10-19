@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Watch.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import BackButton from "./BackButton";
 
 
 function Watch() {
@@ -23,7 +24,9 @@ function Watch() {
 
   return (
     <div className="home-container">
+      <BackButton className="is-fixed" />
       <div id="nav-watch">
+
       <h1>Gallery</h1>
       </div>
       <div id="card-border">

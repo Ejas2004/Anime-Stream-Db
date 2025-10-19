@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Community.css";
+import BackButton from "./BackButton";
 
 export default function Community() {
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -68,6 +69,7 @@ export default function Community() {
 
   return (
     <div className="community-container">
+      <BackButton className="is-fixed" />
       <div className="community-wrapper">
         {/* Header */}
         <div className="community-header">

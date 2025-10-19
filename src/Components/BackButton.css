@@ -1,0 +1,35 @@
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+.back-icon {
+  font-size: 1rem;
+}
+
+.back-text {
+  font-size: 0.95rem;
+}
+
+.back-btn.is-fixed {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 1000;
+}
+
