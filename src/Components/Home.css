@@ -338,46 +338,145 @@
 }
 
 /* Responsive design */
+@media (max-width: 1024px) {
+  .content {
+    padding: 0 30px;
+  }
+
+  .title-brand {
+    font-size: 3.5rem;
+  }
+
+  .title-main {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .feature-item span {
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .content {
+    padding: 0 25px;
+  }
+
   .title-brand {
     font-size: 3rem;
   }
-  
+
+  .title-main {
+    font-size: 1.2rem;
+  }
+
   .subtitle {
     font-size: 1.1rem;
+    margin-bottom: 30px;
   }
-  
-  
+
   .buttons {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
-  
+
   .btn {
-    width: 200px;
+    width: 220px;
+    padding: 14px 28px;
+    font-size: 1rem;
   }
-  
+
   .features-preview {
     flex-direction: column;
     gap: 15px;
+    margin-top: 30px;
   }
-  
+
+  .feature-item {
+    width: 100%;
+    max-width: 250px;
+  }
+
   .anime-glow {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
+  .content {
+    padding: 0 20px;
+  }
+
   .title-brand {
     font-size: 2.5rem;
   }
-  
+
   .title-main {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
   }
-  
+
   .subtitle {
     font-size: 1rem;
+    line-height: 1.5;
   }
-  
+
+  .subtitle br {
+    display: none;
+  }
+
+  .buttons {
+    margin: 30px 0;
+  }
+
+  .btn {
+    width: 200px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+
+  .btn-icon {
+    font-size: 1rem;
+  }
+
+  .feature-item {
+    padding: 12px;
+  }
+
+  .feature-icon {
+    font-size: 1.3rem;
+  }
+
+  .feature-item span {
+    font-size: 0.85rem;
+  }
+
+  .particles .particle {
+    width: 3px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 360px) {
+  .title-brand {
+    font-size: 2rem;
+  }
+
+  .title-main {
+    font-size: 0.9rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    width: 180px;
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
 }
